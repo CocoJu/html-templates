@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Вход</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="src/main/resources/static/res/bootstrap/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="src/main/resources/static/res/css/signin.css"/>
+    <link rel="stylesheet" href="src/main/resources/static/res/css/custom.css"/>
+</head>
+<body>
+<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <span class="navbar-brand" href="#">ОГИС - система тестирования</span>
+        </div>
+        <div class="collapse navbar-collapse navbar-right">
+            <ul class="nav navbar-nav">
+                <li><span class="navbar-brand">Иванов Иван Иваныч</span></li>
+                <li><a href="#">выход</a></li>
+            </ul>
+        </div><!--/.nav-collapse -->
+    </div>
+</div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 padding-top20">
+
+                <div class="dropdown">
+
+                    <button type="button" data-toggle="dropdown"
+                            class="btn btn-default" style="display: block;margin-bottom: 10px;">
+                                <span class="glyphicon glyphicon-align-justify"></span></button>
+
+                    <ul id="menu1" class="dropdown-menu" role="menu" aria-labelledby="drop4">
+                        <li role="presentation"><a role="menuitem" tabindex="-1"
+                                                   data-toggle="modal" data-target="#myModal" target="_blank">Добавить</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1"
+                                                   target="_blank">Переименовать</a></li>
+                    </ul>
+
+                </div>
+
+                <!-- Modal -->
+                <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                <h4 class="modal-title" id="myModalLabel">Добавить категорию</h4>
+                            </div>
+                            <div class="modal-body">
+                                <form class="form-horizontal">
+                                    <input type="text" class="form-control" id="lastName" placeholder="Введите название категории">
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
+                                <button type="button" class="btn btn-primary">Сохранить изменения</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div  class="btn-group-vertical">
+                    <button type="button" class="btn btn-default">математика</button>
+                    <button type="button" class="btn btn-default">русский яз.</button>
+                    <button type="button" class="btn btn-default">литература</button>
+                </div>
+            </div>
+            <div class="col-md-8 padding-top20">colmd8 фыаввыа
+            </div>
+        </div>
+    </div>
+
+    <script src="src/main/resources/static/res/jquery/dist/jquery.min.js"></script>
+    <script src="src/main/resources/static/res/bootstrap/js/dropdown.js"></script>
+    <script src="src/main/resources/static/res/bootstrap/js/modal.js"></script>
+
+</body>
+</html>
